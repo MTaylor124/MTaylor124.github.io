@@ -1,26 +1,31 @@
 // 'use strict'
 $(() => {
-  // When the user scrolls the page, execute myFunction
+  // $('#navabout').onClick(window.scrollTo(0, 1000))
   window.onscroll = function () {
     myScrollFunction()
   }
-
-// Get the navbar
-  // const navbar = $('#mattnavbar')
-
   const navbar = document.getElementById('mattnavbar')
-  const subnavbar = document.getElementById('subnavbar')
-// Get the offset position of the navbar
+  // const subnavbar = document.getElementById('about')
   const sticky = navbar.offsetTop
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myScrollFunction () {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky')
-      subnavbar.classList.remove('stickyfix')
+      navbar.classList.remove('stickyfix')
+      $('.superlazyfix').html('<br/><br/><br/>')
     } else {
       navbar.classList.remove('sticky')
-      subnavbar.classList.add('stickyfix')
+      navbar.classList.add('stickyfix')
+      $('.superlazyfix').html('')
     }
   }
+
+  $("a[href^='#']").click(function (e) {
+    e.preventDefault()
+
+    const position = $($(this).attr('href')).offset().top
+
+    $('body, html').animate({
+      scrollTop: position
+    })
+  })
 })
