@@ -18,6 +18,9 @@ body {
 .myskills {
   padding-bottom: 30px;
 }
+.myiconsection2 {
+  padding-bottom: 280px;
+}
 .myicons {
   font-size: 90px;
 }
@@ -33,7 +36,7 @@ body {
 .myicons:hover {
   background-color: rgba(100, 255, 255, 0.25);
 }
-#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo {
+#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader {
   display: flex;
   justify-content: center;
 }
