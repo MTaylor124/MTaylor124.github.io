@@ -36,7 +36,7 @@ body {
 .myicons:hover {
   background-color: rgba(100, 255, 255, 0.25);
 }
-#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader {
+#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader, .aboutinfo {
   display: flex;
   justify-content: center;
 }
@@ -53,10 +53,15 @@ body {
 .navitem:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-
+.projsub {
+  font-size: 1.45em;
+}
 .proj {
   text-decoration: none;
   color: black;
+}
+.aboutinfo {
+  font-size: 1.3em;
 }
 .proj:hover {
   /* font-weight: 800; */
@@ -95,16 +100,16 @@ body {
 }
 
 .proj {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 2.3em;
+  font-weight: 800;
 }
 
-.experiencestats {
+.experiencestats, .aboutinfo {
     display: flex;
     justify-content: center;
     width: 60%;
     margin: auto;
-    padding-bottom: 170px;
+    padding-bottom: 220px;
 }
 
 .edupadding, .projpadding {
