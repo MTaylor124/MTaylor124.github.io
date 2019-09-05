@@ -6,6 +6,7 @@ body {
   background-image: url('./tealbg.png');
   background-repeat: repeat;
   background-attachment: scroll;
+  font-family: verdana;
 }
 
 .skillicon {
@@ -38,6 +39,7 @@ body {
 }
 .myskills {
   color: white;
+  font-size: 3.3em;
 }
 .myicons:hover {
   background-color: rgba(100, 255, 255, 0.25);
@@ -97,6 +99,7 @@ body {
   justify-content: center;
   text-transform: uppercase;
   font-size: 2.5em;
+  color: white;
 }
 
 .eduheader {
