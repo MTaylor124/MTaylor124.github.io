@@ -152,13 +152,25 @@ body {
     justify-content: center;
     padding-top: 0;
     margin: 0;
+    text-decoration: none;
+    color: black;
+}
+.frontendinfo:hover {
+  color: white;
+  text-decoration: underline;
 }
 .frontendinfo2 {
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.9em;
     justify-content: center;
     padding-top: 0;
     margin: 0;
+    text-decoration: none;
+    color: black;
+}
+.frontendinfo2:hover {
+  color: white;
+  text-decoration: underline;
 }
 .experiencestats, .aboutinfo {
     display: flex;
