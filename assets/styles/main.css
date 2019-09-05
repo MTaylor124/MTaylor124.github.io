@@ -9,11 +9,17 @@ body {
 }
 
 .skillicon {
-  height: 30px;
+  height: 100px;
 }
-
-i {
-  height: 30px;
+.myiconsection1, .myiconsection2 {
+  display: flex;
+  justify-content: center;
+}
+.myskills {
+  padding-bottom: 30px;
+}
+.myicons {
+  font-size: 90px;
 }
 .myname-header {
 	-webkit-text-stroke-width: 3px;
@@ -24,7 +30,9 @@ i {
   padding: 10px 20px;
   margin: 5px;
 }
-
+.myicons:hover {
+  background-color: rgba(100, 255, 255, 0.25);
+}
 #mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo {
   display: flex;
   justify-content: center;
