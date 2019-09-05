@@ -23,6 +23,9 @@ body {
 }
 .myicons {
   font-size: 90px;
+  border-radius: 50%;
+  border: 30px;
+  color: white;
 }
 .myname-header {
 	-webkit-text-stroke-width: 3px;
@@ -33,8 +36,12 @@ body {
   padding: 10px 20px;
   margin: 5px;
 }
+.myskills {
+  color: white;
+}
 .myicons:hover {
   background-color: rgba(100, 255, 255, 0.25);
+  outline: 2px solid white;
 }
 #mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader, .aboutinfo {
   display: flex;
