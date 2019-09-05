@@ -9,6 +9,26 @@ body {
   font-family: verdana;
 }
 
+.projcontainer {
+  display: flex;
+}
+.projcontainer div {
+  /* border: 2px solid white; */
+  padding: 15px;
+}
+.proj1, .proj2, .proj3 {
+  flex: 1;
+  border-radius: 10%;
+}
+.proj1:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
+.proj2:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
+.proj3:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
 .skillicon {
   height: 100px;
 }
@@ -45,7 +65,7 @@ body {
   background-color: rgba(100, 255, 255, 0.25);
   outline: 2px solid white;
 }
-#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader, .aboutinfo {
+#mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader, .aboutinfo, .frontendinfo, .projabout {
   display: flex;
   justify-content: center;
 }
@@ -68,6 +88,11 @@ body {
 .proj {
   text-decoration: none;
   color: black;
+}
+.projabout {
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
 }
 .aboutinfo {
   font-size: 1.3em;
@@ -109,11 +134,32 @@ body {
     font-size: 1.8em;
 }
 
+.frontendproj {
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
 .proj {
-  font-size: 2.3em;
+  font-size: 2.6em;
   font-weight: 800;
 }
-
+.frontendinfo {
+    display: flex;
+    font-size: 2.2em;
+    justify-content: center;
+    padding-top: 0;
+    margin: 0;
+}
+.frontendinfo2 {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    padding-top: 0;
+    margin: 0;
+}
 .experiencestats, .aboutinfo {
     display: flex;
     justify-content: center;
