@@ -5,7 +5,6 @@ $(() => {
     myScrollFunction()
   }
   const navbar = document.getElementById('mattnavbar')
-  // const subnavbar = document.getElementById('about')
   const sticky = navbar.offsetTop
   function myScrollFunction () {
     if (window.pageYOffset >= sticky) {
