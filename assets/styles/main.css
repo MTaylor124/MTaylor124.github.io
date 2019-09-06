@@ -8,7 +8,27 @@ body {
   background-attachment: scroll;
   font-family: verdana;
 }
-
+.resumee {
+  font-size: 2em;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.resumee:hover {
+  color: white;
+  text-decoration: underline;
+}
+.mygorgeousface {
+  height: 250px;
+  border-radius: 20%;
+  /* outline: 3px solid black;
+   */
+  box-shadow: 0 0 7px black;
+  display: block;
+  margin: auto;
+}
 .projcontainer {
   display: flex;
 }
