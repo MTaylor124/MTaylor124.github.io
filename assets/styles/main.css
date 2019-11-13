@@ -8,49 +8,80 @@ body {
   background-attachment: scroll;
   font-family: verdana;
 }
-.resumee {
-  font-size: 2em;
-  color: black;
-  padding: 15px;
+.aboutinfo {
+  font-size: 1.3em;
+  max-width: 700px;
+  padding-left: 25px;
+  border: 0;
+}
+.aboutmefix {
+  display: flex;
+  flex-direction: row;
+  max-width: 600;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiencestats {
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 240px;
 }
-.resumee:hover {
+
+.edupadding, .projpadding {
+  padding-bottom: 180px;
+}
+.eduheader {
+  padding-bottom: 20px;
+}
+.experienceinfo {
+  font-size: 1.8em;
+}
+
+.frontendproj {
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.frontendinfo {
+  display: flex;
+  font-size: 2.2em;
+  justify-content: center;
+  padding-top: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+.frontendinfo:hover {
+  color: white;
+  text-decoration: underline;
+}
+.frontendinfo2 {
+  display: flex;
+  font-size: 1.9em;
+  justify-content: center;
+  padding-top: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+.frontendinfo2:hover {
   color: white;
   text-decoration: underline;
 }
 .mygorgeousface {
-  height: 250px;
+  height: 370px;
   border-radius: 20%;
-  /* outline: 3px solid black;
-   */
+
   box-shadow: 0 0 7px black;
   display: block;
   margin: auto;
-}
-.projcontainer {
-  display: flex;
-}
-.projcontainer div {
-  /* border: 2px solid white; */
-  padding: 15px;
-}
-.proj1, .proj2, .proj3 {
-  flex: 1;
-  border-radius: 10%;
-}
-.proj1:hover {
-  background: rgba(100, 255, 255, 0.2);
-}
-.proj2:hover {
-  background: rgba(100, 255, 255, 0.2);
-}
-.proj3:hover {
-  background: rgba(100, 255, 255, 0.2);
-}
-.skillicon {
-  height: 100px;
 }
 .myiconsection1, .myiconsection2 {
   display: flex;
@@ -69,13 +100,12 @@ body {
   color: white;
 }
 .myname-header {
-	-webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: teal;
-  font-size: 6em;
+  font-size: 4em;
   /* background: rgba(100, 255, 255, 0.15); */
   border-radius: 40%;
-  padding: 10px 20px;
-  margin: 5px;
+  margin: 0;
 }
 .myskills {
   color: white;
@@ -89,9 +119,17 @@ body {
   display: flex;
   justify-content: center;
 }
+#mainheader {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#mattnavbar {
+  display: flex;
+  justify-content: center;
+}
 .navitem {
   background-color: rgba(0, 0, 0, 0.7);
-  font-size: 1.6em;
+  font-size: 1.3em;
   padding: 10px 30px;
   border: 3px;
   border-color: rgba(0, 0, 0);
@@ -114,13 +152,52 @@ body {
   display: flex;
   justify-content: center;
 }
-.aboutinfo {
-  font-size: 1.3em;
-}
 .proj:hover {
   /* font-weight: 800; */
   color: white;
   text-decoration: underline;
+}
+.projcontainer {
+  display: flex;
+}
+.proj {
+  font-size: 2.6em;
+  font-weight: 800;
+}
+.proj1, .proj2, .proj3 {
+  flex: 1;
+  border-radius: 10%;
+}
+.proj1:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
+.proj2:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
+.proj3:hover {
+  background: rgba(100, 255, 255, 0.2);
+}
+.resumee {
+  font-size: 2em;
+  color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.resumee:hover {
+  color: white;
+  text-decoration: underline;
+}
+.skillicon {
+  height: 100px;
+}
+.stilltrying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1000; */
+  margin: auto;
 }
 .sticky {
   position: fixed;
@@ -131,9 +208,9 @@ body {
   padding-bottom: 20px;
 }
 .subheader {
-  margin: 5px;
-  font-size: 1.5em;
-  font-weight: 800;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0;
 }
 .sectionsubheader {
   font-size: 3.2em;
@@ -146,70 +223,8 @@ body {
   font-size: 2.5em;
   color: white;
 }
-
-.eduheader {
-  padding-bottom: 20px;
-}
-.experienceinfo {
-    font-size: 1.8em;
-}
-
-.frontendproj {
-  display: flex;
-  font-size: 1em;
-  justify-content: center;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: 0;
-}
-.proj {
-  font-size: 2.6em;
-  font-weight: 800;
-}
-.frontendinfo {
-    display: flex;
-    font-size: 2.2em;
-    justify-content: center;
-    padding-top: 0;
-    margin: 0;
-    text-decoration: none;
-    color: black;
-}
-.frontendinfo:hover {
-  color: white;
-  text-decoration: underline;
-}
-.frontendinfo2 {
-    display: flex;
-    font-size: 1.9em;
-    justify-content: center;
-    padding-top: 0;
-    margin: 0;
-    text-decoration: none;
-    color: black;
-}
-.frontendinfo2:hover {
-  color: white;
-  text-decoration: underline;
-}
-.experiencestats, .aboutinfo {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
-    padding-bottom: 240px;
-}
-
-.edupadding, .projpadding {
-  padding-bottom: 180px;
-}
 .subnavbar {
-  padding-top: 50px;
   display: flex;
   justify-content: center;
-}
-#mattnavbar {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
+  margin: 0;
 }
