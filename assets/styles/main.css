@@ -209,7 +209,10 @@ html, body {
 .projabout {
   font-weight: 300;
   display: flex;
-  justify-content: center;
+  text-align: center;
+  justify-content: flex-end;
+  max-width: 80%;
+  margin: auto;
 }
 .proj:hover {
   /* font-weight: 800; */
@@ -222,40 +225,63 @@ html, body {
   flex-direction: column;
 }
 .projectpic {
-  height: 275px;
-  width: 275px;
+  height: 220px;
+  width: 300px;
   margin: 12px;
   background-color: white;
   border-radius: 15px;
+}
+.mattcersizepic {
+    height: 220px;
+    margin: 12px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 12px black;
 }
 .projectRow {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  outline-width: 15px;
-  outline-color: rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 40px 40px 40px 220px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.projectRowOdd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  border-radius: 40px 40px 220px 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.13);
+  margin: auto;
+  width: 70%;
+  margin-bottom: 15px;
+  border-radius: 40px 40px 40px 220px;
+}
+.projectOdd {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.13);
+  margin: auto;
+  width: 70%;
+  margin-bottom: 15px;
+  border-radius: 40px 40px 220px 40px;
 }
 .proj {
-  font-size: 1.8em;
+  font-size: 2.1em;
   font-weight: 800;
 }
 .proj1, .proj2, .proj3 {
   flex: 1;
   border-radius: 10%;
   flex-direction: row;
-}
-.project {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: auto;
-  width: 70%;
-  margin-bottom: 15px;
-  border-radius: 30px;
 }
 /* .proj1:hover {
   background: rgba(100, 255, 255, 0.2);
@@ -266,6 +292,9 @@ html, body {
 .proj3:hover {
   background: rgba(100, 255, 255, 0.2);
 } */
+.rightoffset {
+  text-align: right;
+}
 .resumee {
   font-size: 1em;
   font-weight: 600;
