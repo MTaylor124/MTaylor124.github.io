@@ -5,16 +5,29 @@ $(() => {
     myScrollFunction()
   }
   const navbar = document.getElementById('mattnavbar')
+  const header = document.getElementById('mainheader')
+  const leftNav = document.getElementById('navabout')
+  const rightNav = document.getElementById('navskill')
   const sticky = navbar.offsetTop
   function myScrollFunction () {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add('sticky')
       navbar.classList.remove('stickyfix')
-      $('.superlazyfix').html('<br/><br/><br/>')
+      header.classList.add('headerPadding')
+
+      leftNav.classList.remove('fullyRoundedLeft')
+      leftNav.classList.add('halfRoundedLeft')
+      rightNav.classList.remove('fullyRoundedRight')
+      rightNav.classList.add('halfRoundedRight')
     } else {
       navbar.classList.remove('sticky')
       navbar.classList.add('stickyfix')
-      $('.superlazyfix').html('')
+      header.classList.remove('headerPadding')
+
+      leftNav.classList.add('fullyRoundedLeft')
+      leftNav.classList.remove('halfRoundedLeft')
+      rightNav.classList.add('fullyRoundedRight')
+      rightNav.classList.remove('halfRoundedRight')
     }
   }
 
