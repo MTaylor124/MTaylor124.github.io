@@ -136,6 +136,13 @@ html, body {
   flex: 1;
   margin-bottom: 25px;
 }
+.GAheader {
+  display: flex;
+  justify-content: center;
+}
+.GApic {
+  width: 28%;
+}
 .mygorgeousface {
   height: 370px;
   border-radius: 20%;
