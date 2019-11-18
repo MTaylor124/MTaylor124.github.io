@@ -62,14 +62,36 @@ html, body {
 .buffer {
   margin: 10px;
 }
+.centerExperience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
 .experiencestats {
   display: flex;
   justify-content: center;
-  width: 60%;
-  margin: auto;
+  align-items: center;
+  text-align: center;
+  width: 65%;
   padding-bottom: 240px;
+  margin-top: 20px;
 }
-
+.experienceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+}
+.experienceLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
 .edupadding, .projpadding {
   padding-bottom: 180px;
 }
@@ -77,9 +99,14 @@ html, body {
   padding-bottom: 20px;
 }
 .experienceinfo {
-  font-size: 1.8em;
+  font-size: 2.5em;
+  display: flex;
+  /* padding-right: 15px; */
+  /* flex: 1; */
+  justify-content: center;
+  margin: auto;
+  align-items: center;
 }
-
 .frontendproj {
   display: flex;
   font-size: 1em;
@@ -136,12 +163,22 @@ html, body {
   flex: 1;
   margin-bottom: 25px;
 }
+.GAkitchen {
+  height: 220px;
+}
 .GAheader {
   display: flex;
   justify-content: center;
 }
 .GApic {
   width: 28%;
+}
+.GAdate {
+  display: flex;
+  padding-top: 16px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 .mygorgeousface {
   height: 370px;
