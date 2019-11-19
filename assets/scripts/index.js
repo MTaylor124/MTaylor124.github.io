@@ -40,4 +40,10 @@ $(() => {
       scrollTop: position
     })
   })
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+  $('#exampleModalLong').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
 })
