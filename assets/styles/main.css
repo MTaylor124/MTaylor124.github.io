@@ -53,7 +53,9 @@ html, body {
   align-items: center;
   padding-bottom: 50px;
 }
-
+.blackText {
+  color: black;
+}
 .builtwith {
   display: flex;
   flex-direction: row;
@@ -138,6 +140,7 @@ html, body {
 .frontendinfo {
   display: flex;
   font-size: 1em;
+  font-weight: 600;
   justify-content: center;
   padding-top: 0;
   margin: 0;
@@ -151,6 +154,7 @@ html, body {
 .frontendinfo2 {
   display: flex;
   font-size: 1em;
+  font-weight: 600;
   justify-content: center;
   padding-top: 0;
   margin: 0;
@@ -235,7 +239,7 @@ html, body {
 }
 .myicons {
   font-size: 90px;
-  border-radius: 50%;
+  border-radius: 50px;
   border: 30px;
   color: white;
 }
@@ -293,12 +297,17 @@ html, body {
   color: black;
 }
 .projabout {
-  font-weight: 300;
+  color: black;
+  font-weight: 600;
   display: flex;
   text-align: center;
   justify-content: flex-end;
   max-width: 80%;
   margin: auto;
+  line-height: 1.1;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  margin-bottom: 18px;
 }
 .proj:hover {
   /* font-weight: 800; */
