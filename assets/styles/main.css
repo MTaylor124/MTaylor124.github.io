@@ -227,21 +227,36 @@ html, body {
   display: block;
   margin: auto;
 }
-.myiconsection1, .myiconsection2 {
+.myiconsection {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 70px;
+  border: 2px solid rgba(100, 255, 255, 0.3);
 }
 .myskills {
   padding-bottom: 30px;
 }
-.myiconsection2 {
-  padding-bottom: 280px;
+.myiconsection {
+  margin-bottom: 280px;
 }
 .myicons {
-  font-size: 90px;
+  font-size: 40px;
   border-radius: 50px;
   border: 30px;
   color: white;
+  padding: 10px;
+  background: rgba(100, 255, 255, 0.25);
+  margin: 5px;
+  border: 2px solid rgba(100, 255, 255, 0.65);
+}
+.myicons:hover {
+  background-color: rgba(100, 255, 255, 0.55);
+  /* outline: 2px solid white; */
 }
 .myname-header {
   -webkit-text-stroke-width: 3px;
@@ -257,10 +272,6 @@ html, body {
 .myskills {
   color: white;
   font-size: 3.3em;
-}
-.myicons:hover {
-  background-color: rgba(100, 255, 255, 0.25);
-  outline: 2px solid white;
 }
 #mainheader, .subheader, .sectionsubheader, .experienceinfo, .experiencestats, .educationsub, .proj, .projsub, .projinfo, .interestsheader, .aboutinfo, .frontendinfo, .projabout {
   display: flex;
