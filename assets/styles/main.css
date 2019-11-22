@@ -13,6 +13,11 @@ body {
 html, body {
   height: 100%;
 }
+
+
+
+
+
 .aboutmebackground {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 15px;
@@ -110,11 +115,14 @@ html, body {
   justify-content: center;
   align-self: center;
 }
-.edupadding, .projpadding {
+.edupadding {
   padding-bottom: 180px;
 }
 .eduheader {
   padding-bottom: 20px;
+}
+#experience {
+  margin-top: 30px;
 }
 .experienceinfo {
   font-size: 2.8em;
@@ -200,7 +208,8 @@ html, body {
   justify-content: center;
 }
 .GApic {
-  width: 14%;
+  width: 18%;
+  margin-top: 40px;
 }
 .GAdate {
   display: flex;
@@ -216,7 +225,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 90px;
   padding-top: 20px;
 }
 .mygorgeousface {
@@ -236,13 +245,13 @@ html, body {
   background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 70px;
-  border: 2px solid rgba(100, 255, 255, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.06);
 }
 .myskills {
   padding-bottom: 30px;
 }
 .myiconsection {
-  margin-bottom: 280px;
+  margin-bottom: 250px;
 }
 .myicons {
   font-size: 40px;
@@ -416,6 +425,23 @@ html, body {
   color: black;
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 50px;
+}
+.sideProjContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  width: 65%;
+  border-radius: 100px;
+  margin-top: 15px;
+  margin: auto;
+  margin-bottom: 90px;
+  height: 450px;
+}
+.sideProj {
+  font-size: 1.8em;
+  color: white;
 }
 .softwareEngineer {
   display: flex;
