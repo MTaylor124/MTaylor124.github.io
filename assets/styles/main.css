@@ -13,7 +13,9 @@ body {
 html, body {
   height: 100%;
 }
-
+ul {
+  list-style-type: none;
+}
 .aboutmebackground {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 15px;
@@ -74,6 +76,12 @@ html, body {
   align-items: center;
   width: 65%;
   margin: auto;
+}
+.description {
+}
+.descriptionItem {
+  font-weight: 600;
+  text-align: left;
 }
 .experiencestats {
   display: flex;
@@ -160,6 +168,20 @@ html, body {
 }
 .frontendinfo2 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 600;
+  justify-content: center;
+  padding-top: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+.frontendinfo3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1em;
   font-weight: 600;
   justify-content: center;
@@ -226,6 +248,14 @@ html, body {
   align-items: center;
   padding-bottom: 90px;
   padding-top: 20px;
+}
+.modal-header {
+  background-color: teal;
+  color: white;
+}
+.modalClose {
+  color: black;
+  background: rgba(0,128,128, 0.3);
 }
 .mygorgeousface {
   height: 370px;
@@ -308,6 +338,7 @@ html, body {
   text-decoration: none;
 
 }
+
 .projsub {
   font-size: 1em;
 }
@@ -388,7 +419,23 @@ html, body {
   margin-bottom: 15px;
   border-radius: 40px 40px 220px 40px;
 }
+.projectOdd2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.53);
+  margin: auto;
+  width: 70%;
+  margin-bottom: 15px;
+  border-radius: 40px 40px 220px 40px;
+}
 .proj {
+  font-size: 2.1em;
+  font-weight: 800;
+}
+.projinprogress {
+  display: flex;
+  justify-content: center;
   font-size: 2.1em;
   font-weight: 800;
 }
@@ -453,10 +500,10 @@ html, body {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.3);
-  height: 320px;
   width: 20%;
   margin: 20px;
   border-radius: 12px;
+  padding: 5px;
 }
 .smallproj:hover {
   background: rgba(255, 255, 255, 0.45);
@@ -484,6 +531,9 @@ html, body {
 .fancylogopic {
   height: 200px;
   border-radius: 20px;
+}
+.bufferspace {
+  margin-bottom: 21px;
 }
 .linkedinpost {
   display: flex;
@@ -558,7 +608,27 @@ html, body {
   margin: 0;
   height: 25px;
 }
-
+.techContainer {
+  display: flex;
+  flex-direction: column;
+}
+.techEach {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.techName {
+  font-weight: 600;
+  padding-right: 8px;
+}
+.techDescription {
+  color: teal;
+}
+.techButton {
+  color: black;
+  background: rgba(0,0,0, 0.1);
+  padding: 5;
+}
 .whitebarleft {
   position: fixed;
   top: 0;
